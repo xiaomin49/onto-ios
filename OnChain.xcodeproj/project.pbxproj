@@ -20,6 +20,9 @@
 		D4FDA7FC2021A3C9007F47D9 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA7FA2021A3C9007F47D9 /* UIViewController+HUD.m */; };
 		D4FDA80E2021A943007F47D9 /* CCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA80D2021A943007F47D9 /* CCRequest.m */; };
 		D4FDA81D2022DF95007F47D9 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA81C2022DF95007F47D9 /* Common.m */; };
+		D4FDA97B20295251007F47D9 /* IdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA97A20295251007F47D9 /* IdentityViewController.m */; };
+		D4FDA97E2029525A007F47D9 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA97D2029525A007F47D9 /* MineViewController.m */; };
+		D4FDA98120295273007F47D9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA98020295273007F47D9 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,12 @@
 		D4FDA80D2021A943007F47D9 /* CCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRequest.m; sourceTree = "<group>"; };
 		D4FDA81B2022DF95007F47D9 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		D4FDA81C2022DF95007F47D9 /* Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		D4FDA97920295251007F47D9 /* IdentityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityViewController.h; sourceTree = "<group>"; };
+		D4FDA97A20295251007F47D9 /* IdentityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityViewController.m; sourceTree = "<group>"; };
+		D4FDA97C2029525A007F47D9 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		D4FDA97D2029525A007F47D9 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		D4FDA97F20295273007F47D9 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		D4FDA98020295273007F47D9 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,18 +163,15 @@
 		D4FDA77B20218E5D007F47D9 /* OnChain */ = {
 			isa = PBXGroup;
 			children = (
-				D4FDA7FE2021A6CD007F47D9 /* Assets */,
+				D4FDA9752029521C007F47D9 /* Identity */,
+				D4FDA9762029521D007F47D9 /* Mine */,
+				D4FDA9742029521C007F47D9 /* Models */,
 				D4FDA7FD2021A6CC007F47D9 /* Common */,
-				D4FDA8062021A6CD007F47D9 /* Identity */,
-				D4FDA8022021A6CD007F47D9 /* Mine */,
 				D4FDA80A2021A6CD007F47D9 /* Network */,
 				D4FDA7EE2021A0D3007F47D9 /* Config */,
 				D4FDA7EB20219FB8007F47D9 /* 3rd */,
 				D4FDA7ED20219FB8007F47D9 /* Base */,
-				D4FDA7E920219FB8007F47D9 /* Controls */,
-				D4FDA7E820219FB8007F47D9 /* Models */,
 				D4FDA7EC20219FB8007F47D9 /* Utils */,
-				D4FDA7EA20219FB8007F47D9 /* Views */,
 				D4FDA77C20218E5D007F47D9 /* AppDelegate.h */,
 				D4FDA77D20218E5D007F47D9 /* AppDelegate.m */,
 				D4FDA77F20218E5D007F47D9 /* ViewController.h */,
@@ -193,27 +199,6 @@
 				D4FDA7A220218E5D007F47D9 /* Info.plist */,
 			);
 			path = OnChainUITests;
-			sourceTree = "<group>";
-		};
-		D4FDA7E820219FB8007F47D9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D4FDA7E920219FB8007F47D9 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		D4FDA7EA20219FB8007F47D9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		D4FDA7EB20219FB8007F47D9 /* 3rd */ = {
@@ -270,99 +255,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		D4FDA7FE2021A6CD007F47D9 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				D4FDA7FF2021A6CD007F47D9 /* Models */,
-				D4FDA8002021A6CD007F47D9 /* Controls */,
-				D4FDA8012021A6CD007F47D9 /* Views */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		D4FDA7FF2021A6CD007F47D9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D4FDA8002021A6CD007F47D9 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		D4FDA8012021A6CD007F47D9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D4FDA8022021A6CD007F47D9 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				D4FDA8032021A6CD007F47D9 /* Models */,
-				D4FDA8042021A6CD007F47D9 /* Controls */,
-				D4FDA8052021A6CD007F47D9 /* Views */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		D4FDA8032021A6CD007F47D9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D4FDA8042021A6CD007F47D9 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		D4FDA8052021A6CD007F47D9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D4FDA8062021A6CD007F47D9 /* Identity */ = {
-			isa = PBXGroup;
-			children = (
-				D4FDA8072021A6CD007F47D9 /* Models */,
-				D4FDA8082021A6CD007F47D9 /* Controls */,
-				D4FDA8092021A6CD007F47D9 /* Views */,
-			);
-			path = Identity;
-			sourceTree = "<group>";
-		};
-		D4FDA8072021A6CD007F47D9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D4FDA8082021A6CD007F47D9 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		D4FDA8092021A6CD007F47D9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		D4FDA80A2021A6CD007F47D9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +263,49 @@
 				D4FDA80D2021A943007F47D9 /* CCRequest.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D4FDA9742029521C007F47D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA97F20295273007F47D9 /* UserModel.h */,
+				D4FDA98020295273007F47D9 /* UserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4FDA9752029521C007F47D9 /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA9772029523C007F47D9 /* Controls */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		D4FDA9762029521D007F47D9 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA97820295243007F47D9 /* Controls */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D4FDA9772029523C007F47D9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA97920295251007F47D9 /* IdentityViewController.h */,
+				D4FDA97A20295251007F47D9 /* IdentityViewController.m */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		D4FDA97820295243007F47D9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA97C2029525A007F47D9 /* MineViewController.h */,
+				D4FDA97D2029525A007F47D9 /* MineViewController.m */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,8 +500,11 @@
 			files = (
 				D4FDA7F62021A182007F47D9 /* UIViewController+DismissKeyboard.m in Sources */,
 				D4FDA7F72021A182007F47D9 /* BaseNavigationViewController.m in Sources */,
+				D4FDA98120295273007F47D9 /* UserModel.m in Sources */,
+				D4FDA97B20295251007F47D9 /* IdentityViewController.m in Sources */,
 				D4FDA78120218E5D007F47D9 /* ViewController.m in Sources */,
 				D4FDA7F52021A182007F47D9 /* BaseViewController.m in Sources */,
+				D4FDA97E2029525A007F47D9 /* MineViewController.m in Sources */,
 				D4FDA78C20218E5D007F47D9 /* main.m in Sources */,
 				D4FDA80E2021A943007F47D9 /* CCRequest.m in Sources */,
 				D4FDA81D2022DF95007F47D9 /* Common.m in Sources */,
