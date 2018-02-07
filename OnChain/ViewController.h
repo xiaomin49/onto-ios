@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
++ (void)gotoGuideVC;
+
++ (void)gotoHomeVC;
+
++ (void)gotoIdentityVC;
+
 
 @end
 

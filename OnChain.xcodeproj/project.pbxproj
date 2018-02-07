@@ -23,6 +23,8 @@
 		D4FDA97B20295251007F47D9 /* IdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA97A20295251007F47D9 /* IdentityViewController.m */; };
 		D4FDA97E2029525A007F47D9 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA97D2029525A007F47D9 /* MineViewController.m */; };
 		D4FDA98120295273007F47D9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA98020295273007F47D9 /* UserModel.m */; };
+		D4FDA987202A9F6C007F47D9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA986202A9F6C007F47D9 /* HomeViewController.m */; };
+		D4FDA98A202A9F75007F47D9 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA989202A9F75007F47D9 /* CreateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,10 @@
 		D4FDA97D2029525A007F47D9 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		D4FDA97F20295273007F47D9 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		D4FDA98020295273007F47D9 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		D4FDA985202A9F6C007F47D9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D4FDA986202A9F6C007F47D9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D4FDA988202A9F75007F47D9 /* CreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		D4FDA989202A9F75007F47D9 /* CreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 		D4FDA77B20218E5D007F47D9 /* OnChain */ = {
 			isa = PBXGroup;
 			children = (
+				D4FDA982202A98F7007F47D9 /* Home */,
 				D4FDA9752029521C007F47D9 /* Identity */,
 				D4FDA9762029521D007F47D9 /* Mine */,
 				D4FDA9742029521C007F47D9 /* Models */,
@@ -306,6 +313,33 @@
 				D4FDA97D2029525A007F47D9 /* MineViewController.m */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		D4FDA982202A98F7007F47D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA983202A98F7007F47D9 /* Controls */,
+				D4FDA984202A98F7007F47D9 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D4FDA983202A98F7007F47D9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				D4FDA985202A9F6C007F47D9 /* HomeViewController.h */,
+				D4FDA986202A9F6C007F47D9 /* HomeViewController.m */,
+				D4FDA988202A9F75007F47D9 /* CreateViewController.h */,
+				D4FDA989202A9F75007F47D9 /* CreateViewController.m */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		D4FDA984202A98F7007F47D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,8 +542,10 @@
 				D4FDA78C20218E5D007F47D9 /* main.m in Sources */,
 				D4FDA80E2021A943007F47D9 /* CCRequest.m in Sources */,
 				D4FDA81D2022DF95007F47D9 /* Common.m in Sources */,
+				D4FDA98A202A9F75007F47D9 /* CreateViewController.m in Sources */,
 				D4FDA7FC2021A3C9007F47D9 /* UIViewController+HUD.m in Sources */,
 				D4FDA77E20218E5D007F47D9 /* AppDelegate.m in Sources */,
+				D4FDA987202A9F6C007F47D9 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

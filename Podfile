@@ -9,5 +9,6 @@ pod 'MJRefresh','~> 3.1.15'
 pod 'MBProgressHUD','~> 1.0.0'
 pod 'SDWebImage','~> 4.2.1'
 pod 'SAMKeychain', '~> 1.5.3'
+pod 'MMDrawerController', '~> 0.6.0'
 
 end

@@ -35,7 +35,17 @@
 //    }
 //}
 
++ (void)gotoGuideVC {
+    
+}
 
++ (void)gotoHomeVC {
+    
+}
+
++ (void)gotoIdentityVC {
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
