@@ -10,4 +10,6 @@
 
 @interface CreateView : UIView
 
+@property (nonatomic, copy) NSString *qrcode_str;
+@property (nonatomic, strong) UIImageView *imageV;
 @end

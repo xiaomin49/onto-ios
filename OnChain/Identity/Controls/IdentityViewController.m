@@ -17,7 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF"];
+//    [self configUI];
 }
+
+
+//- (void)viewWillDisappear:(BOOL)animated {
+//    self.navigationController.navigationBarHidden = NO;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

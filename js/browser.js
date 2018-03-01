@@ -40425,7 +40425,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             wallet.create(name);
             let identity = new identity_1.Identity();
             let privateKey = core.generatePrivateKeyStr();
-            identity.create(privateKey, password, '');
+            identity.create(privateKey, password, name);
             //TODO register ontid
             wallet.defaultOntid = identity.ontid;
             wallet.addIdentity(identity);
@@ -40545,6 +40545,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 utils_1.sendBackResult2Native(claim.signedData, callback);
             }
             return claim.signedData;
+        }
+        static encryptPrivateKey(privateKey, password, callback) {
+            let wifKey = core.getWIFFromPrivateKey(privateKey);
+            let encryptedPrivateKey = scrypt.encrypt(wifKey, password);
+            if (callback) {
+                utils_1.sendBackResult2Native(encryptedPrivateKey, callback);
+            }
+            return encryptedPrivateKey;
         }
         static decryptEncryptedPrivateKey(encryptedPrivateKey, password, callback) {
             let wifKey = scrypt.decrypt(encryptedPrivateKey, password);

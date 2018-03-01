@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PwdEnterView : UIView
+@interface PwdEnterView : UIView <UITextFieldDelegate>
+
+@property (nonatomic, copy) void(^callbackPwd)(NSString *);
+
+- (void)clearPassword;
 
 @end

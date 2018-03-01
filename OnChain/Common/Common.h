@@ -74,7 +74,7 @@
  将string时间转换为date
 
  @param string 被转换的时间串
- @param string 转换的格式
+ @param formatStr 转换的格式
  @return date
  */
 + (NSDate *)dateFromString:(NSString *)string format:(NSString *)formatStr;
@@ -83,15 +83,10 @@
  将date转换为时间串
 
  @param date 被转换的date
- @param string 转换的格式
+ @param formatStr 转换的格式
  @return 时间串
  */
 + (NSString *)stringFromDate:(NSDate *)date format:(NSString *)formatStr;
-
-
-
-
-
 
 
 

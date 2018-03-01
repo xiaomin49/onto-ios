@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface BrowserView : UIView
+@interface BrowserView : UIView <WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler>
+
+@property (nonatomic, strong) WKWebView *wkWebView;
+@property (nonatomic, copy) void(^callbackPrompt)(NSString *);
 
 @end
