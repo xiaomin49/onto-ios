@@ -11,11 +11,11 @@
 
 #ifdef DEBUG
 
-#define BaseURL @"https://dev.hylaa.net/link2svc"
+#define BaseURL @"http://47.96.138.224"
 
 #else
 
-#define BaseURL @"https://dev.hylaa.net/link2svc"
+#define BaseURL @"http://47.96.138.224"
 
 #endif
 

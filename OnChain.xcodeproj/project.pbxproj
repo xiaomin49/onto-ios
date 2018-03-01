@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		098438A0D842EE5CFD7C0244 /* libPods-OnChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 405A6F2344E188C2CCAEA225 /* libPods-OnChain.a */; };
+		D41C157C20413FD800174D80 /* CreateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D41C157B20413FD800174D80 /* CreateView.m */; };
+		D41C158020416A8000174D80 /* UIImage+LXQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41C157F20416A8000174D80 /* UIImage+LXQRCode.m */; };
+		D41C15832043A5FF00174D80 /* UIImage+colorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D41C15822043A5FF00174D80 /* UIImage+colorImage.m */; };
+		D41C15862043E2B100174D80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D41C15882043E2B100174D80 /* InfoPlist.strings */; };
+		D41C16412045379000174D80 /* ImportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41C16402045379000174D80 /* ImportViewController.m */; };
+		D48AC8DD20454E5E00720E67 /* ImportEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48AC8DC20454E5E00720E67 /* ImportEnterViewController.m */; };
+		D49419572033FE3B00F3A3DB /* PwdEnterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49419562033FE3B00F3A3DB /* PwdEnterView.m */; };
+		D494195C203EB32B00F3A3DB /* js in Resources */ = {isa = PBXBuildFile; fileRef = D494195B203EB32B00F3A3DB /* js */; };
+		D494195F203EB4D300F3A3DB /* BrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = D494195E203EB4D300F3A3DB /* BrowserView.m */; };
 		D4FDA77E20218E5D007F47D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA77D20218E5D007F47D9 /* AppDelegate.m */; };
 		D4FDA78120218E5D007F47D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDA78020218E5D007F47D9 /* ViewController.m */; };
 		D4FDA78620218E5D007F47D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4FDA78520218E5D007F47D9 /* Assets.xcassets */; };
@@ -61,6 +70,23 @@
 		405A6F2344E188C2CCAEA225 /* libPods-OnChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		628AC3BF4316BC39587835F5 /* Pods-OnChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnChain/Pods-OnChain.release.xcconfig"; sourceTree = "<group>"; };
 		761AD0B5FBDAD9C5B7B1A849 /* Pods-OnChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnChain/Pods-OnChain.debug.xcconfig"; sourceTree = "<group>"; };
+		D41C157A20413FD800174D80 /* CreateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateView.h; sourceTree = "<group>"; };
+		D41C157B20413FD800174D80 /* CreateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateView.m; sourceTree = "<group>"; };
+		D41C157E20416A8000174D80 /* UIImage+LXQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LXQRCode.h"; sourceTree = "<group>"; };
+		D41C157F20416A8000174D80 /* UIImage+LXQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LXQRCode.m"; sourceTree = "<group>"; };
+		D41C15812043A5FF00174D80 /* UIImage+colorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+colorImage.h"; sourceTree = "<group>"; };
+		D41C15822043A5FF00174D80 /* UIImage+colorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+colorImage.m"; sourceTree = "<group>"; };
+		D41C15872043E2B100174D80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D41C158A2043E37B00174D80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D41C163F2045379000174D80 /* ImportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportViewController.h; sourceTree = "<group>"; };
+		D41C16402045379000174D80 /* ImportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportViewController.m; sourceTree = "<group>"; };
+		D48AC8DB20454E5E00720E67 /* ImportEnterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportEnterViewController.h; sourceTree = "<group>"; };
+		D48AC8DC20454E5E00720E67 /* ImportEnterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportEnterViewController.m; sourceTree = "<group>"; };
+		D49419552033FE3B00F3A3DB /* PwdEnterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PwdEnterView.h; sourceTree = "<group>"; };
+		D49419562033FE3B00F3A3DB /* PwdEnterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PwdEnterView.m; sourceTree = "<group>"; };
+		D494195B203EB32B00F3A3DB /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		D494195D203EB4D300F3A3DB /* BrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserView.h; sourceTree = "<group>"; };
+		D494195E203EB4D300F3A3DB /* BrowserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserView.m; sourceTree = "<group>"; };
 		D4FDA77920218E5D007F47D9 /* OnChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FDA77C20218E5D007F47D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4FDA77D20218E5D007F47D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,9 +170,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D41C157D20416A8000174D80 /* LXQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				D41C15812043A5FF00174D80 /* UIImage+colorImage.h */,
+				D41C15822043A5FF00174D80 /* UIImage+colorImage.m */,
+				D41C157E20416A8000174D80 /* UIImage+LXQRCode.h */,
+				D41C157F20416A8000174D80 /* UIImage+LXQRCode.m */,
+			);
+			path = LXQRCode;
+			sourceTree = "<group>";
+		};
+		D49419542033FE1600F3A3DB /* PWDEnter */ = {
+			isa = PBXGroup;
+			children = (
+				D49419552033FE3B00F3A3DB /* PwdEnterView.h */,
+				D49419562033FE3B00F3A3DB /* PwdEnterView.m */,
+			);
+			path = PWDEnter;
+			sourceTree = "<group>";
+		};
 		D4FDA77020218E5D007F47D9 = {
 			isa = PBXGroup;
 			children = (
+				D494195B203EB32B00F3A3DB /* js */,
 				D4FDA77B20218E5D007F47D9 /* OnChain */,
 				D4FDA79420218E5D007F47D9 /* OnChainTests */,
 				D4FDA79F20218E5D007F47D9 /* OnChainUITests */,
@@ -186,6 +233,7 @@
 				D4FDA78520218E5D007F47D9 /* Assets.xcassets */,
 				D4FDA78A20218E5D007F47D9 /* Info.plist */,
 				D4FDA78B20218E5D007F47D9 /* main.m */,
+				D41C15882043E2B100174D80 /* InfoPlist.strings */,
 			);
 			path = OnChain;
 			sourceTree = "<group>";
@@ -218,6 +266,7 @@
 		D4FDA7EC20219FB8007F47D9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D41C157D20416A8000174D80 /* LXQRCode */,
 				D4FDA7F92021A3C9007F47D9 /* HUD */,
 			);
 			path = Utils;
@@ -256,6 +305,7 @@
 		D4FDA7FD2021A6CC007F47D9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D49419542033FE1600F3A3DB /* PWDEnter */,
 				D4FDA81B2022DF95007F47D9 /* Common.h */,
 				D4FDA81C2022DF95007F47D9 /* Common.m */,
 			);
@@ -331,6 +381,10 @@
 				D4FDA986202A9F6C007F47D9 /* HomeViewController.m */,
 				D4FDA988202A9F75007F47D9 /* CreateViewController.h */,
 				D4FDA989202A9F75007F47D9 /* CreateViewController.m */,
+				D41C163F2045379000174D80 /* ImportViewController.h */,
+				D41C16402045379000174D80 /* ImportViewController.m */,
+				D48AC8DB20454E5E00720E67 /* ImportEnterViewController.h */,
+				D48AC8DC20454E5E00720E67 /* ImportEnterViewController.m */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -338,6 +392,10 @@
 		D4FDA984202A98F7007F47D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D494195D203EB4D300F3A3DB /* BrowserView.h */,
+				D494195E203EB4D300F3A3DB /* BrowserView.m */,
+				D41C157A20413FD800174D80 /* CreateView.h */,
+				D41C157B20413FD800174D80 /* CreateView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -434,6 +492,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D4FDA77020218E5D007F47D9;
 			productRefGroup = D4FDA77A20218E5D007F47D9 /* Products */;
@@ -453,6 +512,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4FDA78620218E5D007F47D9 /* Assets.xcassets in Resources */,
+				D41C15862043E2B100174D80 /* InfoPlist.strings in Resources */,
+				D494195C203EB32B00F3A3DB /* js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,20 +593,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41C15832043A5FF00174D80 /* UIImage+colorImage.m in Sources */,
 				D4FDA7F62021A182007F47D9 /* UIViewController+DismissKeyboard.m in Sources */,
 				D4FDA7F72021A182007F47D9 /* BaseNavigationViewController.m in Sources */,
+				D41C157C20413FD800174D80 /* CreateView.m in Sources */,
+				D48AC8DD20454E5E00720E67 /* ImportEnterViewController.m in Sources */,
 				D4FDA98120295273007F47D9 /* UserModel.m in Sources */,
 				D4FDA97B20295251007F47D9 /* IdentityViewController.m in Sources */,
 				D4FDA78120218E5D007F47D9 /* ViewController.m in Sources */,
 				D4FDA7F52021A182007F47D9 /* BaseViewController.m in Sources */,
 				D4FDA97E2029525A007F47D9 /* MineViewController.m in Sources */,
+				D494195F203EB4D300F3A3DB /* BrowserView.m in Sources */,
 				D4FDA78C20218E5D007F47D9 /* main.m in Sources */,
 				D4FDA80E2021A943007F47D9 /* CCRequest.m in Sources */,
 				D4FDA81D2022DF95007F47D9 /* Common.m in Sources */,
+				D49419572033FE3B00F3A3DB /* PwdEnterView.m in Sources */,
 				D4FDA98A202A9F75007F47D9 /* CreateViewController.m in Sources */,
+				D41C16412045379000174D80 /* ImportViewController.m in Sources */,
 				D4FDA7FC2021A3C9007F47D9 /* UIViewController+HUD.m in Sources */,
 				D4FDA77E20218E5D007F47D9 /* AppDelegate.m in Sources */,
 				D4FDA987202A9F6C007F47D9 /* HomeViewController.m in Sources */,
+				D41C158020416A8000174D80 /* UIImage+LXQRCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,11 +648,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		D41C15882043E2B100174D80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41C15872043E2B100174D80 /* en */,
+				D41C158A2043E37B00174D80 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D4FDA7A320218E5D007F47D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -640,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

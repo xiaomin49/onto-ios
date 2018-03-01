@@ -1,30 +1,24 @@
 //
-//  IdentityViewController.m
+//  ImportViewController.m
 //  OnChain
 //
-//  Created by Zeus.Zhang on 2018/2/6.
+//  Created by Zeus.Zhang on 2018/2/27.
 //  Copyright © 2018年 Zeus. All rights reserved.
 //
 
-#import "IdentityViewController.h"
+#import "ImportViewController.h"
 
-@interface IdentityViewController ()
+@interface ImportViewController ()
+
 
 @end
 
-@implementation IdentityViewController
+@implementation ImportViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF"];
-//    [self configUI];
 }
-
-
-//- (void)viewWillDisappear:(BOOL)animated {
-//    self.navigationController.navigationBarHidden = NO;
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

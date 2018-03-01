@@ -1,30 +1,23 @@
 //
-//  IdentityViewController.m
+//  ImportEnterViewController.m
 //  OnChain
 //
-//  Created by Zeus.Zhang on 2018/2/6.
+//  Created by Zeus.Zhang on 2018/2/27.
 //  Copyright © 2018年 Zeus. All rights reserved.
 //
 
-#import "IdentityViewController.h"
+#import "ImportEnterViewController.h"
 
-@interface IdentityViewController ()
+@interface ImportEnterViewController ()
 
 @end
 
-@implementation IdentityViewController
+@implementation ImportEnterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF"];
-//    [self configUI];
 }
-
-
-//- (void)viewWillDisappear:(BOOL)animated {
-//    self.navigationController.navigationBarHidden = NO;
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

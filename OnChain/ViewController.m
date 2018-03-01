@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "IdentityViewController.h"
+#import "MineViewController.h"
+#import "HomeViewController.h"
+
 //#import <MiniVisionAuthorization/MiniVisionAuthorization.h>
 
 @interface ViewController () ///<>
@@ -40,11 +44,15 @@
 }
 
 + (void)gotoHomeVC {
-    
+    HomeViewController *vc = [[HomeViewController alloc] init];
+    BaseNavigationViewController *nav = [[BaseNavigationViewController alloc] initWithRootViewController:vc];
+    APP_DELEGATE.window.rootViewController = nav;
 }
 
 + (void)gotoIdentityVC {
-    
+    IdentityViewController *vc = [[IdentityViewController alloc] init];
+    BaseNavigationViewController *nav = [[BaseNavigationViewController alloc] initWithRootViewController:vc];
+    APP_DELEGATE.window.rootViewController = nav;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,15 +12,29 @@
 #import <YYKit.h>
 #import <AFNetworking.h>
 #import "AppDelegate.h"
+#import "BaseNavigationViewController.h"
+#import <Masonry.h>
+#import <UIImageView+WebCache.h>
+#import "Common.h"
+#import "UIViewController+HUD.h"
+#import "UIImage+LXQRCode.h"
 
 //Nav、Tab颜色字体
-#define NAVBACKCOLOR [UIColor colorWithHexString:@"#212121"]
-#define NAVTITLECOLOR [UIColor colorWithHexString:@"#ffffff"]
-#define NAVFONT [UIFont systemFontOfSize:14.0]
-#define MAINBACKCOLOR [UIColor colorWithHexString:@"#ffffff"]
-#define TABBARTITLECOLOR [UIColor colorWithHexString:@"#ffffff"]
-#define TABBARTITLECOLORSELECTED [UIColor colorWithHexString:@"#3E84E0"]
+#define NAVBACKCOLOR [UIColor colorWithHexString:@"#FFFFFF"]
+#define NAVTITLECOLOR [UIColor colorWithHexString:@"#3e3e3e"]
+#define NAVFONT [UIFont systemFontOfSize:10.0]
+#define MAINBACKCOLOR [UIColor colorWithHexString:@"#212121"]
+#define TABBARTITLECOLOR [UIColor colorWithHexString:@"#212121"]
+#define TABBARTITLECOLORSELECTED [UIColor colorWithHexString:@"#33A4BE"]
 #define TABITEMFONT [UIFont systemFontOfSize:10.0]
+
+#define MAINAPPCOLOR [UIColor colorWithHexString:@"#20c0db"]
+
+#define HUGEFONT [UIFont systemFontOfSize:20]
+#define LARGEFONT [UIFont systemFontOfSize:18]
+#define MIDDLEFONT [UIFont systemFontOfSize:16]
+#define DEFAULTFONT [UIFont systemFontOfSize:14]
+#define LITTLEFONT [UIFont systemFontOfSize:12]
 
 //Tabbar图片
 #define TABONEIMAGE [UIImage imageNamed:@"tab_video"]
@@ -35,6 +49,8 @@
 //国际化
 #define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"userLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"InfoPlist"]
 
+//iPhone X
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 #define APP_DELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 

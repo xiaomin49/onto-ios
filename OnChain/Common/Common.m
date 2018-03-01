@@ -128,7 +128,7 @@
     return [infoDic objectForKey:@"CFBundleDisplayName"];
 }
 
-+ (NSDate *)dateFromString:(NSString *)string format:(NSString *)formatStr{
++ (NSDate *)dateFromString:(NSString *)string format:(NSString *)formatStr {
     NSDateFormatter * format = [[NSDateFormatter alloc] init];
     [format setDateFormat:formatStr];
     return [format dateFromString:string];
@@ -139,7 +139,6 @@
     [format setDateFormat:formatStr];
     return  [format stringFromDate:date];
 }
-
 
 @end
 

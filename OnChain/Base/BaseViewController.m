@@ -22,16 +22,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:NAVBACKCOLOR] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]]; //去除导航条下的阴影线条
-    [self setNavTitleAttributesWithColor:NAVTITLECOLOR Font:[UIFont boldSystemFontOfSize:18]];
+    [self setNavTitleAttributesWithColor:NAVTITLECOLOR Font:[UIFont systemFontOfSize:12]];
     [self setupForDismissKeyboard];
     
 }
-
-//- (void)addFPSLabel {
-//    CCLabel *ccLabel = [CCLabel defaultCCLabel];
-//    ccLabel.frame = CGRectMake(80, 0, 50, 30);
-//    [[UIApplication sharedApplication].keyWindow addSubview:ccLabel];
-//}
 
 -(id)init {
     self = [super init];
@@ -39,27 +33,12 @@
         /** 控制视图是否显示Tabbar
         NSLog(@"rootViewController:%@",APP_DELEGATE.window.rootViewController);
         if ([APP_DELEGATE.window.rootViewController isKindOfClass:[UITabBarController class]]) {
-            NSLog(@"1234567");
-            if ([self isKindOfClass:[LiveViewController class]] ||
-                [self isKindOfClass:[MyViewController class]] ||
-                [self isKindOfClass:[LiteAppViewController class]] ||
-                [self isKindOfClass:[ContentViewController class]]) {
-                self.hidesBottomBarWhenPushed = NO;
-            }else {
-                self.hidesBottomBarWhenPushed = YES;
-            }
+         
         }
          **/
     }
     return self;
 }
-
-//- (void)setStatusBarBackgroundColor:(UIColor *)color {
-//    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
-//    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
-//        statusBar.backgroundColor = color;
-//    }
-//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -91,14 +70,15 @@
 
 -(void)setNavLeftImageIcon:(UIImage *)imageIcon Title:(NSString *)title{
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, 70, 44);
+    button.frame = CGRectMake(20, 0, 70, 44);
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:NAVTITLECOLOR forState:UIControlStateNormal];
     button.titleLabel.font = NAVFONT;
     button.titleLabel.numberOfLines = 0;
     [button setImage:imageIcon forState:UIControlStateNormal];
     [button addTarget:self action:@selector(navLeftAction) forControlEvents:UIControlEventTouchUpInside];
-    [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, button.frame.size.width - imageIcon.size.width)];
+    [button setImageEdgeInsets:UIEdgeInsetsMake(0, 10, 0, button.frame.size.width - imageIcon.size.width - 20)];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, 20, 0, 0)];
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 }
@@ -167,9 +147,6 @@
     return YES;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
 
 
 - (void)didReceiveMemoryWarning {
